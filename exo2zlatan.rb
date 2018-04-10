@@ -1,3 +1,6 @@
+#ceci est un code alternatif que nous a écrit un pote de l’espace de coworking.
+# On l’a pas encore regardé et analysé mais il a l’air bien cool !
+
 #DÈfinition des alphabets miniscules et MAJUSCULES
 
 alphabet_az = ("a".."z").to_a.join
@@ -37,17 +40,17 @@ cesar_AZ = alphabet_AZ.chars.rotate(i).join
 resultat = []
 
 p.each do |lettre|
-  
+
 	if ("a".."z") === lettre
-    
+
 		lettre = lettre.tr( alphabet_az, cesar_az )
-    
-		resultat << lettre 
+
+		resultat << lettre
 	else
-    
+
 		lettre = lettre.tr( alphabet_AZ, cesar_AZ )
-    
-		resultat << lettre  
+
+		resultat << lettre
 	end
 
 end
