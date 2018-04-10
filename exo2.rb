@@ -15,7 +15,7 @@ i = cle % alphabet_az.size
 
 
 #DÈfinition de la phrase ‡ crypter
-
+puts "tapez votre message a crypter"
 phrase = gets
 
 p = phrase.split('').to_a
