@@ -1,15 +1,58 @@
+#DÈfinition des alphabets miniscules et MAJUSCULES
+
+alphabet_az = ("a".."z").to_a.join
+
+alphabet_AZ = ("A".."Z").to_a.join
 
 
-def chiffre_de_cesar(string, number)
-	ascii = string.chars.map(&:ord)
-	shifted = ascii.map { |string| string + number }
-	shifted.map { |string| string.chr }.join
+
+#DÈfinition de la clÈ de cryptage
+
+cle = 5
+
+i = cle % alphabet_az.size
+
+
+
+#DÈfinition de la phrase ‡ crypter
+
+phrase = gets
+
+p = phrase.split('').to_a
+
+
+
+#DÈfinition du code CÈsar
+
+cesar_az = alphabet_az.chars.rotate(i).join
+
+cesar_AZ = alphabet_AZ.chars.rotate(i).join
+
+
+
+#Test de chaque caractËre, minuscule ou MAJUSCULE
+
+#Puis remplacement de chaque caractËre par rapport au code cÈsar dÈfini
+
+resultat = []
+
+p.each do |lettre|
+  
+	if ("a".."z") === lettre
+    
+		lettre = lettre.tr( alphabet_az, cesar_az )
+    
+		resultat << lettre 
+	else
+    
+		lettre = lettre.tr( alphabet_AZ, cesar_AZ )
+    
+		resultat << lettre  
+	end
+
 end
 
 
-def perform
-	puts chiffre_de_cesar("What a zzzz!", 5)
-end
+#Impression du rÈsultat
 
-perform
-
+print resultat.join();

@@ -1,5 +1,9 @@
 # rubycestbien
 
+Charles Quenum et Louis-Elie Maillard
+
+
+
 Exercices ruby de Mardi 10 avril
 
 
@@ -16,6 +20,6 @@ Exo2 = OK
 Exo3 = trader_du_dimanche OK mais 
 		trader_du_lundi abandonné
 
-Exo4 = 
+Exo4 = OK
 
-Exo4 b = Il fonctionne mais ne peut rechercher qu'un seul mot à la fois : target = "word". Amusez vous ! 
+Exo4b = Il fonctionne mais ne peut rechercher qu'un seul mot à la fois : target = "word". Amusez vous ! 
